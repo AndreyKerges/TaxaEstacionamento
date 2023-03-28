@@ -1,0 +1,220 @@
+.group {
+    position: relative;
+  }
+  
+  body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-image: url(https://cdn.pixabay.com/photo/2013/11/28/09/57/parking-219767_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 120px 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    width: 348px;
+    height: 450px;
+    padding-left: 10px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .form p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: white;
+  }
+  
+  .container-1 {
+    padding-top: 30px;
+  }
+  
+  .main-input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .main-input:focus {
+    outline: none;
+    border-bottom-color: #42ff1c;
+  }
+  
+  .lebal-email {
+    color: #999999;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .main-input:focus ~ .lebal-email,
+  .main-input:valid ~ .lebal-email {
+    top: -20px;
+    font-size: 12px;
+    color: #42ff1c;
+  }
+  
+  .highlight-span {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .main-input:focus ~ .highlight-span {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+  }
+  
+  @keyframes input-focus {
+    from {
+      background: #42ff1c;
+    }
+  
+    to {
+      width: 185px;
+    }
+  }
+  
+  .submit {
+    margin-top: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+    .btn {
+      width: 40%;
+      height: 10%;
+      margin: 0.5em;
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 0.625em;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+  
+     }
+     
+     button:hover {
+      color: black;
+     }
+     
+     button:after {
+      content: "";
+      background: rgb(121, 121, 121);
+      position: absolute;
+      z-index: -1;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: all 0.5s;
+     }
+     
+     button:hover:after {
+      transform: skewX(-45deg) scale(1, 1);
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+     }
+     
+     select {
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      -ms-appearance:none;
+      appearance:none;
+      outline:0;
+      box-shadow:none;
+      border:0!important;
+      background: #ffffff;
+      background-image: none;
+      flex: 1;
+      padding: 0 .5em;
+      color:#000000;
+      cursor:pointer;
+      font-weight: bold;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      width: 20px;
+      padding: 10;
+  
+    }
+    select::-ms-expand {
+      display: none;
+      
+    }
+    .select {
+      position: relative;
+      display: flex;
+      width:80%;
+      height: 3em;
+      line-height: 3;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: .25em;
+      padding-left: 10px;
+      font-size: 20px;
+  
+    }
+    .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 1em;
+      background: #ffffff;
+      cursor:pointer;
+      pointer-events:none;
+      transition:.25s all ease;
+      
+    }
+    .select:hover::after {
+      color: #000000;
+    }
+  
+    h1{
+      color:#42ff1c;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+
+    
